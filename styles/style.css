@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+:root {
+    --cor-de-fundo: #E5EAF0;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria: #6C727F;
+    --cor-primaria: #20293A;
+    --cor-quartearia: #FAFAF9;
+    --cor-quintearia: #E6D6FC;
+    --cor-sextearia: #883AE1;
+    --cor-decimaria: rgba(17, 23, 41, 0.05);
+
+    --fonte-padrao: 'Sora', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: var(--cor-quartearia);
+}
+
+.painel {
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao__cartao {
+    width: 336px;
+    height: 350px;
+    background-color: var(--cor-secundaria);
+    margin-top: 13%;
+    border: 16px solid var(--cor-secundaria);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 100px 0px var(--cor-decimaria);
+}
+
+.apresentacao__cartao__imagem {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.apresentacao__cartao__informacao {
+    margin-top: 16px;
+}
+
+.apresentacao__cartao__informacao__filtro {
+    margin: 16px 0;
+    background-color: var(--cor-quintearia);
+    color: var(--cor-sextearia);
+    font-weight: 700;
+    font-family: 'Sora', sans-serif;
+    font-size: 10px;
+    border-radius: 15px;
+    padding: 4px 17px;
+}
+
+.apresentacao__cartao__informacao__titulo {
+    margin: 16px 0 6px 0;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+}
+
+.apresentacao__cartao__informacao__texto {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-padrao);
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.apresentacao__cartao__informacao__divisao {
+    margin-top: 20px;
+    background-color: var(--cor-de-fundo);
+    height: 1px;
+    text-overflow: clip;
+    width: 110%;
+    position: relative;
+    right: 17px;
+
+}
+
+.apresentacao__cartao__informacao__nome {
+    margin: 20px 0;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: var(--fonte-padrao);
+    color: var(--cor-terciaria);
+}
